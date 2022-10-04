@@ -1,0 +1,2 @@
+# WORKING ONLY ON LINUX
+## TO LAUNCH WRITE: bash lab_1.sh
