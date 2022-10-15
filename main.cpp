@@ -59,7 +59,7 @@ void RAM_TEST(int TEST_AMOUNTOFLAUNCHES) {
     vector<long double> w_times;
     vector<long double> r_times;
     benchDisk* TESTS = new benchDisk[TEST_AMOUNTOFLAUNCHES];
-    size_t CONTAINER_SIZE = 1024 * 8; // 8 MB
+    size_t CONTAINER_SIZE = 1024 * 8 * 1024; // 8 MB
     for (int i = 0; i < TEST_AMOUNTOFLAUNCHES; ++i) {
         vector<int> d(CONTAINER_SIZE / 4, 0);
         TESTS[i].MemoryType = "RAM";
@@ -73,7 +73,7 @@ void RAM_TEST(int TEST_AMOUNTOFLAUNCHES) {
         try {
             ofstream fout("test" + to_string(i) + ".txt");
             for (auto& j: d) {
-                fout << j << "\n";
+                fout << j;
             }
             fout.close();
         }
