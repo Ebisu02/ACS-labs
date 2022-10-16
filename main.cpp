@@ -7,6 +7,9 @@
 
 #include "lab_2/benchmark_cpu.h"
 
+// 1 TODO: Record a data from tests in .csv file
+// 2 TODO: Make a diagrams
+
 using namespace std;
 
 struct benchDisk {
