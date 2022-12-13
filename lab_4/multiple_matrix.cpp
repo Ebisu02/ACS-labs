@@ -72,7 +72,7 @@ void do_lab_4(char** argv) {
         init_re += init_re * i;
     }
     srand(time(0));
-    int N = 100;
+    int N = 10;
     double *A, *B, *C;
     A = static_cast<double *>(malloc(N * N * sizeof(double)));
     B = static_cast<double *>(malloc(N * N * sizeof(double)));
